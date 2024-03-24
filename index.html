@@ -1,122 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
-    h1 {
-      color: #333;
-    }
-    p {
-      line-height: 1.6;
-    }
-    /* Slider styles */
-    .slider-container {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-      margin-bottom: 20px;
-    }
-    .slider {
-      display: flex;
-      transition: transform 0.5s ease;
-    }
-    .slide {
-      flex: 0 0 100%;
-    }
-    .slide img {
-      width: 100%;
-      height: auto;
-    }
-    /* Navigation buttons for slider */
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 20px;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .prev {
-      left: 10px;
-    }
-    .next {
-      right: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Gaur</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My GitHub Page</h1>
-  </header>
-  <div class="container">
-    <h2>About Me</h2>
-    <p>This is a simple GitHub page created for demonstration purposes.</p>
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-      <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
-      <!-- Add more projects as needed -->
-    </ul>
-    <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
-    
-    <!-- Slider section -->
-    <h2>Featured Images</h2>
-    <div class="slider-container">
-      <div class="slider">
-        <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
-        <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
-        <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
-        <!-- Add more slides with images -->
-      </div>
-      <div class="prev" onclick="prevSlide()">&#10094;</div>
-      <div class="next" onclick="nextSlide()">&#10095;</div>
-    </div>
-  </div>
+    <header>
+        <h1>Tushar Gaur</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile Summary</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#education">Education History</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#languages">Languages Known</a></li>
+            <li><a href="#interests">Interests</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="profile">
+            <h2>Profile Summary</h2>
+            <p>A highly motivated & self-disciplined professional looking to work proactively in a challenging environment for growth of the company and myself.</p>
+        </section>
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <ul>
+                <li>Mobile: +91-9870372453</li>
+                <li>Email: tushargaur3312@gmail.com</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education History</h2>
+            <h3>Graduation</h3>
+            <p>Course: B.Sc (Botany)</p>
+            <p>College: Pandit Deendayal Upadhyaya Shekhawati University</p>
+            <p>Year of Passing: 2024</p>
+            <h3>Class XII</h3>
+            <p>Board: Rajasthan</p>
+            <p>Medium: English</p>
+            <p>Year of Passing: 2021</p>
+            <p>Grade: 85-89.9%</p>
+            <h3>Class X</h3>
+            <p>Board: CBSE</p>
+            <p>Medium: English</p>
+            <p>Year of Passing: 2017</p>
+            <p>Grade: 80-84.9%</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Customer Relationship</li>
+                <li>Problem Solving</li>
+                <li>Communication Skills</li>
+                <li>Leadership Quality</li>
+                <li>Critical Thinking</li>
+                <li>Decision Making</li>
+                <li>Computer Proficiency</li>
+                <li>Google AdWords</li>
+                <li>Coding (Java)</li>
+                <li>Excel</li>
+                <li>CMS</li>
+                <li>Ai Platform</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>Hackdroid</h3>
+            <p>A tool designed to give control of the android phone remotely & retrieve information from it.</p>
+            <p>Client/Server application developed in Java (Android for client side) and Python (Server).</p>
+            <p>Project Github URL: https://github.com/tushar5526</p>
+        </section>
+        <section id="languages">
+            <h2>Languages Known</h2>
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+            </ul>
+        </section>
+        <section id="interests">
+            <h2>Other Interests</h2>
+            <ul>
+                <li>Music Production & Mix-Mastering</li>
+                <li>Writing & Composing Hip-Hop Tracks</li>
+                <li>Trekking</li>
+                <li>Photography</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Tushar Gaur 2024</p>
 
-  <script>
-    let slideIndex = 0;
-
-    function showSlide(index) {
-      const slides = document.querySelectorAll('.slide');
-      if (index >= slides.length) { slideIndex = 0; }
-      if (index < 0) { slideIndex = slides.length - 1; }
-      slides.forEach(slide => slide.style.transform = `translateX(${-slideIndex * 100}%)`);
-    }
-
-    function nextSlide() {
-      slideIndex++;
-      showSlide(slideIndex);
-    }
-
-    function prevSlide() {
-      slideIndex--;
-      showSlide(slideIndex);
-    }
-
-    showSlide(slideIndex);
-  </script>
-</body>
-</html>
+      
