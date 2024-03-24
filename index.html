@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      line-height: 1.6;
+    }
+    /* Slider styles */
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .slide {
+      flex: 0 0 100%;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+    /* Navigation buttons for slider */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My GitHub Page</h1>
+  </header>
+  <div class="container">
+    <h2>About Me</h2>
+    <p>This is a simple GitHub page created for demonstration purposes.</p>
+    <h2>Projects</h2>
+    <ul>
+      <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
+      <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
+      <!-- Add more projects as needed -->
+    </ul>
+    <h2>Contact</h2>
+    <p>You can reach me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+    
+    <!-- Slider section -->
+    <h2>Featured Images</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
+        <!-- Add more slides with images -->
+      </div>
+      <div class="prev" onclick="prevSlide()">&#10094;</div>
+      <div class="next" onclick="nextSlide()">&#10095;</div>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelectorAll('.slide');
+      if (index >= slides.length) { slideIndex = 0; }
+      if (index < 0) { slideIndex = slides.length - 1; }
+      slides.forEach(slide => slide.style.transform = `translateX(${-slideIndex * 100}%)`);
+    }
+
+    function nextSlide() {
+      slideIndex++;
+      showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+      slideIndex--;
+      showSlide(slideIndex);
+    }
+
+    showSlide(slideIndex);
+  </script>
+</body>
+</html>
